@@ -1,0 +1,187 @@
+/* General CSS for index.html */
+html{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Outfit', sans-serif; /* Use a clean, modern font */
+    background-color: #f4f4f4; /* Light background for contrast */
+    color: #333; /* Dark text for readability */
+}
+
+
+.headerTitle, .mediaName, .mediaDesc {
+    font-family: 'Outfit', sans-serif; /* Apply Outfit font to specific elements */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-height: 95vh;
+}
+
+/* Header styling */
+.webAppsHeader {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text for readability */
+    padding: 20px; /* Adds spacing inside the header */
+    text-align: center; /* Centers the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    width: 100%; /* Ensures the header takes full width */
+}
+
+.headerContent {
+    max-width: 1200px; /* Limits the width of the content */
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+.headerTitle {
+    font-size: 2.5rem; /* Large font size for the title */
+    margin: 0; /* Removes default margin */
+}
+
+.headerTitle a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Makes links stand out */
+    padding: 10px 15px; /* Adds spacing inside links */
+    border-radius: 5px; /* Rounds the corners of links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+.headerNav {
+    margin-top: 20px; /* Adds spacing above the navigation */
+}
+
+.navLinks {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Aligns links horizontally */
+    justify-content: center; /* Centers the links */
+    gap: 15px; /* Adds spacing between links */
+}
+
+.navLinks li {
+    display: inline; /* Ensures links are inline */
+}
+
+.navLinks a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Makes links stand out */
+    padding: 10px 15px; /* Adds spacing inside links */
+    border-radius: 5px; /* Rounds the corners of links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navLinks a:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+}
+.secondaryBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+
+.secondaryBoxHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    background-color: rgba(122, 70, 70, 0);
+}
+
+.secondaryBoxContent {
+    display: flex;
+    flex-direction: row; /* Ensures children are laid out in a row */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: space-around; /* Optional: Align items horizontally */
+    align-items: center; /* Optional: Align items vertically */
+}
+
+.secondaryBoxContent a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Makes the text inherit the color from its parent */
+    display: block; /* Ensures the entire mediaBox is clickable */
+}
+
+.mediaBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    max-width: 250px;
+    background-color: rgba(219, 219, 219, 0.8);
+    border-radius: 10px;
+}
+
+.mediaImage {
+    max-width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+
+.footer {
+    width: 100vw;
+    background-color: #333; 
+    /* left: 0; */
+    color: #fff;
+    padding: 20px; 
+    margin: 0px;
+    text-align: center; 
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%; 
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.socialLinks {
+    margin-right: 30px; /* Adds spacing above the social links */
+}
+
+.footerLink {
+    color: #fff; /* Keeps the links white */
+    text-decoration: none; /* Removes underline from links */
+    margin: 0 10px; /* Adds spacing between links */
+    font-weight: bold; /* Makes the links stand out */
+}
+
+.footerLink:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
+.footer img {
+    width: 32px; 
+    height: 32px; 
+    /* margin: 0 10px;  */
+    vertical-align: middle; 
+    transition: transform 0.3s ease; 
+}
